@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "Alumni LinkedIn Profile Searcher",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Search alumni and save",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"university\": \"University of XYZ\",\n  \"designation\": \"Software Engineer\",\n  \"passoutYear\": 2020\n}"
+        },
+        "url": "http://localhost:8080/api/alumni/search"
+      }
+    },
+    {
+      "name": "Get all alumni",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/alumni/all"
+      }
+    },
+    {
+      "name": "Get alumni by ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/alumni/1"
+      }
+    },
+    {
+      "name": "Delete alumni by ID",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:8080/api/alumni/1"
+      }
+    }
+  ]
+}
