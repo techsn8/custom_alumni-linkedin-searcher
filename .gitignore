@@ -2,4 +2,4 @@ target/
 .idea/
 *.iml
 .env
-application.properties
+application_1.properties
